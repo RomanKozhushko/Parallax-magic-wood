@@ -86,7 +86,7 @@ body {
 	margin-top: calc(var(--index) * -.75);
 }
 .main-article {
-	--main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+	--main-article-transform: translate3d(0, calc(var(--scrollTop) / -8.5), 0);
 	min-height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -102,7 +102,7 @@ body {
 }
 .main-article__header {
 	text-transform: uppercase;
-	font-size: calc(var(--index) * 1.8);
+	font-size: calc(var(--index) * 1.6);
 	letter-spacing: calc(var(--index) / 7.5);
 	transform: var(--main-article-transform);
 	transition: var(--transition);
@@ -110,8 +110,12 @@ body {
 	color: var(--text);
 	text-shadow: 0 0 15px #9d822b;
 }
+.main-article__content{
+padding-top: 70px;
+}
+
 .main-article__paragraph {
-	max-width: calc(var(--index) * 30);
+	max-width: calc(var(--index) * 50);
 	font-size: calc(var(--index) * .9);
 	margin-top: calc(var(--index) / 1.25);
 	transform: var(--main-article-transform);
